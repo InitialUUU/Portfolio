@@ -2,20 +2,61 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title> GO </title>
+        <title> Main </title>
+        <style>
+            h1 {
+                text-align: center;
+            }
+
+            #txt_welcome {
+                text-align: center; 
+                margin-bottom: 50px;
+            }
+
+            .card {
+                text-align: center;
+            }
+
+            .card_title {
+                font-size: 20px;
+            }
+
+            .card_button {
+                font-size: 25px;
+                width: 150px;
+                height: 30px;
+            }
+
+            .card_img {
+                width: 300px;
+                height: 300px;
+            }
+        </style>
     </head>
-    <body>
-        <h1 style="text-align:center">
-            포트폴리오</h1>
-        <form>
-            ID : <input class="login_inputs" type="text" 
-            style="font-size: 25px">
+    <body bgcolor="#CED4DA">
+        <h1>Portfolio</h1>
+        <div class="card">
+            <img class="card_img" src=".\img\run1.jpg">
+        </div>
+        <div id="txt_welcome">
+            간결하지만 핵심을 지키는 것들을 좋아합니다 <br>
+            구현해보겠습니다
             <br>
-            PW : <input class="login_inputs" type="password" 
-            style="font-size: 25px">
             <br>
-            <input type="button" value="login" 
-            style = "font-size: 25px; width: 100px; height: 30px;">
-        </form>
+        </div>
+        <div style="display:grid; grid-template-columns: 1fr 1fr 1fr;">
+            <div class="card">
+                <img class="card_img" src=".\img\space.jpg">
+                <p class="card_title"> 프로젝트 </p>
+            </div>
+            <div class="card">
+                <img class="card_img" src=".\img\space2.jpg">
+                <p class="card_title"> 깃허브 </p>
+            </div>
+            <div class="card">
+                <img class="card_img" src=".\img\space3.jpg">
+                <p class="card_title"> 블로그 </p>
+            </div>
+        </div>
     </body>
 </html>
